@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QGridLayout" name="gridLayout">
+    <item row="5" column="1">
+     <widget class="QPushButton" name="buttonExport">
+      <property name="text">
+       <string>Tabelle exportieren</string>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="0" colspan="3">
+     <widget class="QPushButton" name="buttonChooseDir">
+      <property name="font">
+       <font>
+        <pointsize>10</pointsize>
+       </font>
+      </property>
+      <property name="contextMenuPolicy">
+       <enum>Qt::PreventContextMenu</enum>
+      </property>
+      <property name="text">
+       <string>Quellordner auswählen</string>
+      </property>
+     </widget>
+    </item>
+    <item row="4" column="0" colspan="3">
+     <widget class="QTableWidget" name="labValueTable">
+      <property name="editTriggers">
+       <set>QAbstractItemView::NoEditTriggers</set>
+      </property>
+      <property name="columnCount">
+       <number>0</number>
+      </property>
+     </widget>
+    </item>
+    <item row="2" column="0" colspan="2">
+     <widget class="QComboBox" name="labValues">
+      <property name="contextMenuPolicy">
+       <enum>Qt::NoContextMenu</enum>
+      </property>
+      <property name="editable">
+       <bool>true</bool>
+      </property>
+      <property name="currentText">
+       <string/>
+      </property>
+      <property name="currentIndex">
+       <number>-1</number>
+      </property>
+      <property name="sizeAdjustPolicy">
+       <enum>QComboBox::AdjustToMinimumContentsLengthWithIcon</enum>
+      </property>
+      <property name="placeholderText">
+       <string>Laborwert auswählen:</string>
+      </property>
+      <property name="frame">
+       <bool>true</bool>
+      </property>
+      <property name="modelColumn">
+       <number>0</number>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="0">
+     <widget class="QLabel" name="label">
+      <property name="font">
+       <font>
+        <pointsize>10</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>Ausgewählter Pfad:</string>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="1" colspan="2">
+     <widget class="QLabel" name="sourceDirText">
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+    </item>
+    <item row="2" column="2">
+     <widget class="QPushButton" name="buttonShow">
+      <property name="font">
+       <font>
+        <pointsize>10</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>Anzeigen</string>
+      </property>
+     </widget>
+    </item>
+    <item row="3" column="0" colspan="3">
+     <widget class="QLabel" name="label_2">
+      <property name="font">
+       <font>
+        <pointsize>10</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>Befund-Liste:</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>800</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menu">
+    <property name="title">
+     <string>Datei</string>
+    </property>
+    <addaction name="menuOpen"/>
+    <addaction name="menuExport"/>
+    <addaction name="menuExit"/>
+   </widget>
+   <addaction name="menu"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="menuExit">
+   <property name="text">
+    <string>Beenden</string>
+   </property>
+  </action>
+  <action name="menuOpen">
+   <property name="text">
+    <string>Ordner öffnen</string>
+   </property>
+  </action>
+  <action name="menuExport">
+   <property name="text">
+    <string>Tabelle exportieren</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
