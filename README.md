@@ -10,6 +10,9 @@ other report structures. Below you can see a video demonstrating how it works.
 Under the branch windows-build you will also find an executable that can be 
 run under Windows with test data so that you can try out the functionality yourself. 
 
+## Demo
+https://github.com/Bratsera/Laboratory-Analysis-Tool/assets/83575368/771fabaa-c532-4cb8-89cf-eff0503da530
+
 ## Running the project
 For the application to work via IDE/Termial you need to have Python installed.
 Run the command  `pip install -r requirements.txt` in the projects root directory to install the dependencies listed in the requirements.txt
@@ -30,5 +33,5 @@ If you like to make modification in the UI, you can open the ./ui/mainwindow.ui 
 You finally need to run the build.py script to update the UI changes in the code
 
 ## Making a standalone build
-To build an executable for Window ns, run the following command: `python exe.py build`
-For other OS see the cx_freeze docs: https://cx-freeze.readthedocs.io/en/latest/builtdist.html
+To build an executable e.g for Windows (also tested with MacOS), run the following command: `python exe.py build`
+For further build customization see the cx_freeze docs: https://cx-freeze.readthedocs.io/en/latest/builtdist.html
