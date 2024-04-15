@@ -22,11 +22,11 @@ If the error "no platform plugin could be located" occurs while running main.py,
 `set QT_PLUGIN_PATH=C:\path\to\your\pyqt5\installation\platforms`
 
 ## How the App works
-1. With the app opened click on the button "Choose Folder" and choose the folder, where the csv/xlsx files are located, which you want to import. (There is a "TestData" folder for demonstration in the program folder)
+1. With the app opened click on the button "Quellordner auswählen" and choose the folder, where the csv/xlsx files are located, which you want to import. (There is a "TestData" folder for demonstration in the program folder)
 2. If everything worked correct, the Path you choose should be displayed in the UI.
-Click on the dropdown and choose the parameter you want to extract and click on the button "Auswählen".
+Click on the dropdown and choose the parameter you want to extract and click on the button "Anzeigen".
 The list of extracted date should be displayed in the UI.
-3. Click on the button "Export" and choose a directory and filename, where the extracted data should be exported. An Excel file should be generated
+3. Click on the button "Tabelle exportieren" and choose a directory and filename, where the extracted data should be exported. An Excel file should be generated
 
 ## Modifying the UI
 If you like to make modification in the UI, you can open the ./ui/mainwindow.ui file with the Program Qt Creator. (You need to have QT installed for this)  
